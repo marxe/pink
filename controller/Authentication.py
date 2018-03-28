@@ -17,7 +17,7 @@ class Authentication:
     def decision(self):
         access = ['Register', 'Login', 'Exit']
         print("Please type if [Register] to Register or [Login] to Login!")
-        decision = input("What you want?")
+        decision = input("What do you want?")
         if(decision in access):
             getattr(self, '%s' % decision)()
         else:
